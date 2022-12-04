@@ -29,6 +29,6 @@
 - [ ] 당첨 번호 메소드 User#LottoSixNumber()
   - [ ] 당첨번호를 (,)로 받을 수 있는 메소드
 - [ ] 보너스 번호 메소드 User#LottoBonus()
-- [ ] 사용자 구매한 로또, 당첨 번호 비교하고 당첨 내역 및 수익률 출력 후 게임 종료 Game#LottoResult(), Game#LottoReturn()
+- [ ] 사용자 구매한 로또, 당첨 번호 비교하고 당첨 내역 및 수익률 출력 후 게임 종료 controller#LottoResult(), Game#LottoReturn()
 - [ ] 예외처리 Validator()
 - [ ] Enum 적용 ErrorMessage#, GameMessage#
