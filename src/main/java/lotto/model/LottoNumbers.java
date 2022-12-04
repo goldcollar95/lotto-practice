@@ -9,5 +9,6 @@ public class LottoNumbers {
 
     private void LottoRandomNumber(){
         List<Integer> numbers = Randoms.pickUniqueNumbersInRange(1, 45, 6);
+
     }
 }
