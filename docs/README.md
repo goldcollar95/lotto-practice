@@ -4,7 +4,7 @@
 로또 게임 기능을 구현해야 한다. 로또 게임은 아래와 같은 규칙으로 진행된다.
 
 - 로또 번호의 숫자 범위는 1~45까지이다.
-- 1개의 로또를 발행할 때 중복되지 않는 6개의 숫자를 뽑는다. LottoNumber#NumberGenerator()
+- 1개의 로또를 발행할 때 중복되지 않는 6개의 숫자를 뽑는다. 
 - 당첨 번호 추첨 시 중복되지 않는 숫자 6개와 보너스 번호 1개를 뽑는다.
 - 당첨은 1등부터 5등까지 있다. 당첨 기준과 금액은 아래와 같다.
     - 1등: 6개 번호 일치 / 2,000,000,000원
@@ -22,13 +22,30 @@
 
 ## 기능 요구 구현 리스트
 
-- [ ] 로또 금액 입력 메소드 LottoNumber#RandomNumber()
-  - [ ] 로또 금액이 입력 된 후 로또를 자동발행하는 메소드
-- [ ] 로또 금액 가격 메소드 User#LottoPrice()
+- [ ] 로또 금액 입력 메소드 model#RandomNumber()
+  - [ ] 로또 금액이 입력 된 후 로또를 자동발행하는 메소드 - 1부터 45까지
+  - [ ] 예외사항 -
+  
+
+- [ ] 로또 금액 가격 메소드 view#LottoPrice()
   - [ ] 로또 금액 1,000원 단위로 입력받을수 있도록 구현하는 메소드 그 외 예외처리 메소드
-- [ ] 당첨 번호 메소드 User#LottoSixNumber()
+  - [ ] 예외사항 - 
+
+
+- [ ] 당첨 번호 메소드 view#LottoSixNumber()
   - [ ] 당첨번호를 (,)로 받을 수 있는 메소드
-- [ ] 보너스 번호 메소드 User#LottoBonus()
-- [ ] 사용자 구매한 로또, 당첨 번호 비교하고 당첨 내역 및 수익률 출력 후 게임 종료 controller#LottoResult(), Game#LottoReturn()
-- [ ] 예외처리 Validator()
-- [ ] Enum 적용 ErrorMessage#, GameMessage#
+  - [ ] 예외사항 - 
+
+
+- [ ] 보너스 번호 메소드 view#LottoBonus()
+  - [ ] 예외사항 - 
+
+
+- [ ] 사용자 구매한 로또, 당첨 번호 비교 model#LottoCompare()
+- [ ] 당첨 내역  controller#LottoResult()
+- [ ] 수익률 출력 Game#LottoReturn()
+- [ ] 게임 종료  
+
+
+- [ ] 전체 예외처리 Validator()
+- [ ] 전체 Enum 적용 view()
