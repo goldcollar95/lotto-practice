@@ -7,8 +7,9 @@ import java.util.List;
 public class LottoNumbers {
 
 
-    private void LottoRandomNumber(){
+    public List<Integer> LottoRandomNumber(){
         List<Integer> numbers = Randoms.pickUniqueNumbersInRange(1, 45, 6);
 
+        return numbers;
     }
 }
