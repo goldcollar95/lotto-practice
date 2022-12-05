@@ -26,4 +26,11 @@ public class InputView {
         List<String> list = Arrays.asList(str.split(","));
         return list;
     }
+
+    public int BonusNumber(int bonuseNum){
+        String input = readLine();
+        int toinput = Integer.parseInt(input);
+        return toinput;
+    }
+
 }
