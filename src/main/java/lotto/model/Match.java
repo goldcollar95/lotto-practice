@@ -3,6 +3,7 @@ package lotto.model;
 import lotto.view.InputView;
 
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class Match {
@@ -24,9 +25,13 @@ public class Match {
     }
 
 
-
-    public boolean countCheck() {
-
-        return false;
+    // 3개일치 --> 1개 추가
+    public void countCheck(Map<List<Integer>, Integer> map, List<Integer> lotto, List<Integer> winningNumbers) {
+            for(Integer match : winningNumbers){
+                if(lotto.contains(match)){
+                    count++;
+                    map.put(lotto, count);
+                }
+            }
     }
 }
