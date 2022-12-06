@@ -41,7 +41,7 @@
   - [ ] 예외사항 - 
 
 
-- [ ] 사용자 구매한 로또, 당첨 번호 비교 model#LottoCompare()
+- [X] 사용자 구매한 로또, 당첨 번호 비교 model#LottoCompare()
 - [ ] 당첨 내역  controller#LottoResult()
 - [ ] 수익률 출력 Game#LottoReturn()
 - [ ] 게임 종료  

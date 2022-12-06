@@ -61,4 +61,12 @@ public class Match {
                 }
             }
     }
+
+
+    public boolean BonusCheck(List<Integer> MatchingLotto, int BonuseNumber){
+        if(MatchingLotto.contains(BonuseNumber)){
+            return true;
+        }
+        return false;
+    }
 }
