@@ -15,13 +15,17 @@ public class Lotto {
             throw new IllegalArgumentException();
         }
     }
-
+    // TODO: 추가 기능 구현
 
     public boolean LottoPrice(int LottoPrice){
         if(LottoPrice % 1000 == 0){
             return true;
         }
         return false;
+
     }
-    // TODO: 추가 기능 구현
+
+    public int totalResult(int LottoPrice){
+
+    }
 }

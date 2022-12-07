@@ -37,12 +37,12 @@
   - [ ] 예외사항 - 
 
 
-- [ ] 보너스 번호 메소드 view#LottoBonus()
+- [X] 보너스 번호 메소드 Match#BonusCheck()
   - [ ] 예외사항 - 
 
 
 - [X] 사용자 구매한 로또, 당첨 번호 비교 model#LottoCompare()
-- [ ] 당첨 내역  controller#LottoResult()
+- [X] 당첨 내역  model#RankList()
 - [ ] 수익률 출력 Game#LottoReturn()
 - [ ] 게임 종료  
 
