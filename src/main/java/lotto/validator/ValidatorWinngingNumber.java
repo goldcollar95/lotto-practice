@@ -9,7 +9,7 @@ public class ValidatorWinngingNumber {
         ValidatorNotString(WinningNum);
         ValidatorNotSeparator(WinningNum);
         ValidatorNotBlank(WinningNum);
-        ValidatorNotMorethanMore(WinningNum);
+
     }
 
     public void ValidatorNotString(String WinningNum){
@@ -36,11 +36,11 @@ public class ValidatorWinngingNumber {
         }
     }
 
-    public void ValidatorNotMorethanMore(String WinningNum){
-        int[] listpoint = new int[] {Integer.parseInt(WinningNum)};
-
-        if(listpoint[0] < 1 || listpoint[0] > 45){
-            throw new IllegalArgumentException(ErrorMessage.GAME_RANDOM_NUMBER_RANGE.getMessage());
-        }
-    }
+//    public void ValidatorNotMorethanMore(String WinningNum){
+//        int[] listpoint = new int[] {Integer.parseInt(WinningNum)};
+//
+//        if(listpoint[0] < 1 || listpoint[0] > 45){
+//            throw new IllegalArgumentException(ErrorMessage.GAME_RANDOM_NUMBER_RANGE.getMessage());
+//        }
+//    }
 }
