@@ -10,11 +10,18 @@ public class Lotto {
     private final List<Integer> numbers;
 
     public Lotto(List<Integer> numbers) {
-        validate(numbers);
+        Validate(numbers);
+        ValidatorRange(numbers);
+        ValidatorDuplicate(numbers);
         this.numbers = numbers;
     }
 
-    private void validate(List<Integer> numbers) {
+    @Override
+    public String toString(){
+        return numbers.toString();
+    }
+
+    private void Validate(List<Integer> numbers) {
         if (numbers.size() != 6) {
             throw new IllegalArgumentException(ErrorMessage.LOTTO_SIX_NUMBER_POSSBLITY.getMessage());
         }
