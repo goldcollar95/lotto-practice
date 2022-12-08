@@ -17,7 +17,7 @@ public class ValidatorPrice {
 
     public void ValidatorPriceNotEmpty(int purcharsePrice){
         if(purcharsePrice == ZERO){
-            throw new IllegalArgumentException(ErrorMessage.PRICE_NOT_ZERO.getMessage())
+            throw new IllegalArgumentException(ErrorMessage.PRICE_NOT_ZERO.getMessage());
         }
     }
 

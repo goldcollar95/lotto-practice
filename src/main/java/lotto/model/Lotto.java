@@ -25,7 +25,7 @@ public class Lotto {
 
     }
 
-    public int totalResult(int LottoPrice){
+    public void totalResult(int LottoPrice){
 
     }
 }

@@ -5,7 +5,7 @@ public enum GameMessage {
     SECOND_BUY_MESSAGE(Count + "개를 구매했습니다."),
     THIRD_INPUT_WINNINGNUMBER("당첨 번호를 입력해 주세요."),
     FOUR_INPUT_BONUSNUMBER("보너스 번호를 입력해 주세요."),
-    CORRECT_LIST("당첨 통계\---"),
+    CORRECT_LIST("당첨 통계\n---"),
     RATE("총 수익률은 "),
     PERCENT("%입니다.");
 
