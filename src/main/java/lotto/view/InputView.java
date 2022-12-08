@@ -23,7 +23,7 @@ public class InputView {
         return toIntPirce;
     }
 
-    public List<String> WinningListNumber(List<String> number){
+    public List<String> WinningListNumber(){
         System.out.println(GameMessage.THIRD_INPUT_WINNINGNUMBER.getgameMessage());
         String InputWinning = readLine();
 
@@ -37,7 +37,7 @@ public class InputView {
         return list;
     }
 
-    public int BonusNumber(int bonuseNum){
+    public int BonusNumber(){
         System.out.println(GameMessage.FOUR_INPUT_BONUSNUMBER.getgameMessage());
         String input = readLine();
         int toinput = Integer.parseInt(input);
