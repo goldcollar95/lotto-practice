@@ -9,7 +9,9 @@ public enum ErrorMessage {
     INPUT_IS_NOT_STRING("[ERROR] 문자를 입력할 수 없습니다."),
     INPUT_IS_NOT_EMPTY("[ERROR] 빈칸은 들어올 수 없습니다."),
     BONUS_INPUT_RANGE("[ERROR] 1부터 45의 숫자만 가능합니다."),
-    BONUS_INPUT_LENGTH("[ERROR] 보너스의 숫자는 한개만 가능합니다");
+    BONUS_INPUT_LENGTH("[ERROR] 보너스의 숫자는 한개만 가능합니다"),
+    PRICE_NOT_ZERO("[ERROR] 0은 나올수 없습니다.");
+
 
     private final String Message;
 
