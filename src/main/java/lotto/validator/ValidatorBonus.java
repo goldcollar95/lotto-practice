@@ -4,7 +4,7 @@ import lotto.view.ErrorMessage;
 
 public class ValidatorBonus {
 
-    public void ValidatorBonusTwoSummary(String BonusNumber){
+    public static void ValidatorBonusTwoSummary(String BonusNumber){
         ValidatorBonusLength(BonusNumber);
         ValidatorBonusRange(BonusNumber);
     }

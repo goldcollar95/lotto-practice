@@ -5,14 +5,14 @@ import lotto.view.ErrorMessage;
 public class ValidatorWinngingNumber {
 
 
-    public void ValidatorWinningSummary(String WinningNum){
+    public static void ValidatorWinningSummary(String WinningNum){
         ValidatorNotString(WinningNum);
         ValidatorNotSeparator(WinningNum);
         ValidatorNotBlank(WinningNum);
 
     }
 
-    public void ValidatorNotString(String WinningNum){
+    public static void ValidatorNotString(String WinningNum){
         String[] check = WinningNum.split(",");
         for(String str : check){
             if(check.equals(" ")){
@@ -21,7 +21,7 @@ public class ValidatorWinngingNumber {
         }
     }
 
-    public void ValidatorNotSeparator(String WinningNum){
+    public static void ValidatorNotSeparator(String WinningNum){
         String[] check = WinningNum.split(",");
         for(String str : check){
             if(!str.matches("^[0-9]*$")){
@@ -30,7 +30,7 @@ public class ValidatorWinngingNumber {
         }
     }
 
-    public void ValidatorNotBlank(String WinningNum){
+    public static void ValidatorNotBlank(String WinningNum){
         if(WinningNum.contains(",")){
             throw new IllegalArgumentException(ErrorMessage.INPUT_SPLIT_INPUT.getMessage());
         }
