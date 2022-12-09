@@ -3,6 +3,7 @@ package lotto.view;
 import lotto.model.RankList;
 
 import java.text.DecimalFormat;
+import java.util.List;
 import java.util.Map;
 
 public class OutputView {
@@ -16,6 +17,13 @@ public class OutputView {
     public static int divideCount(int price){
         int Amount = price / unit;
         return Amount;
+    }
+
+    public void printLotto(List<List<Integer>> lottos){
+        for(List<Integer> list : lottos){
+            System.out.println(lottos);
+        }
+        System.out.println();
     }
 
     public void countProcess(Map<RankList, Integer> result){

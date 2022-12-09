@@ -9,14 +9,14 @@ import java.util.stream.Collectors;
 public class LottoNumbers {
 
 
-    public List<Integer> LottoRandomNumber(){
+    public static List<Integer> LottoRandomNumber(){
         List<Integer> numbers = Randoms.pickUniqueNumbersInRange(1, 45, 6);
 
         return numbers.stream().sorted().collect(Collectors.toList());
     }
 
 
-    public List<List<Integer>> LottoRandomNumbers(int price){
+    public static List<List<Integer>> LottoRandomNumbers(int price){
         List<List<Integer>> RandomNumbers = new ArrayList<>();
         for(int index = 0; index < price; index++){
 
