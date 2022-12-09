@@ -46,6 +46,7 @@ public class InputView {
         String input = readLine();
         int toinput = Integer.parseInt(input);
         ValidatorBonus.ValidatorBonusTwoSummary(input);
+        ValidatorInput.ValidatorAllSummary(input);
         return toinput;
     }
 

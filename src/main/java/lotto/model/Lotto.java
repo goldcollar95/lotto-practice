@@ -36,9 +36,6 @@ public class Lotto {
 
     }
 
-    public void totalResult(int LottoPrice){
-
-    }
 
     public void ValidatorRange(List<Integer> number){
         for(Integer one : number){
