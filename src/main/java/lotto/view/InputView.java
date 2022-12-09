@@ -14,7 +14,7 @@ import static camp.nextstep.edu.missionutils.Console.readLine;
 
 public class InputView {
 
-    public int LottoInputPirce(){
+    public static int LottoInputPrice(){
         System.out.println(GameMessage.FIRST_START_MESSAGE.getgameMessage());
         String InputPirce = readLine();
         ValidatorInput.ValidatorAllSummary(InputPirce);

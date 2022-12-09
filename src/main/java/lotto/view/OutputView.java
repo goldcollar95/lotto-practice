@@ -6,10 +6,16 @@ import java.text.DecimalFormat;
 import java.util.Map;
 
 public class OutputView {
+    private  static final int unit = 1000;
 
-    public void resultCount(int number){
-        int count = number / 1000;
-        System.out.println(count + "개를 구매했습니다.");
+    public static void resultCount(int number){
+//        int count = number / 1000;
+        System.out.println(number + GameMessage.SECOND_BUY_MESSAGE.getgameMessage());
+    }
+
+    public static int divideCount(int price){
+        int Amount = price / unit;
+        return Amount;
     }
 
     public void countProcess(Map<RankList, Integer> result){
