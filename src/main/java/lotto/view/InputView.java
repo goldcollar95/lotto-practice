@@ -26,7 +26,7 @@ public class InputView {
         return toIntPirce;
     }
 
-    public List<Integer> WinningListNumber(){
+    public static List<Integer> WinningListNumber(){
         System.out.println(GameMessage.THIRD_INPUT_WINNINGNUMBER.getgameMessage());
         String InputWinning = readLine();
         ValidatorWinngingNumber.ValidatorWinningSummary(InputWinning);
@@ -34,14 +34,14 @@ public class InputView {
         return WinningNumber;
     }
 
-    public List<Integer> TypeToList(String number){
+    public static List<Integer> TypeToList(String number){
 //        String str = "";
 //        List<Integer> list = Arrays.asList(str.split(","));
 //        return list;
           return Arrays.stream(number.split(",")).map(Integer::parseInt).collect(Collectors.toList());
     }
 
-    public int BonusNumber(){
+    public static int BonusNumber(){
         System.out.println(GameMessage.FOUR_INPUT_BONUSNUMBER.getgameMessage());
         String input = readLine();
         int toinput = Integer.parseInt(input);

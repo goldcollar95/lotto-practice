@@ -10,7 +10,7 @@ public class ValidatorBonus {
     }
 
 
-    public void ValidatorBonusLength(String BonusNumber){
+    public static void ValidatorBonusLength(String BonusNumber){
         int[] checkpoint = new int[]{Integer.parseInt(BonusNumber)};
 
         if(checkpoint.length != 1){
@@ -20,7 +20,7 @@ public class ValidatorBonus {
 
 
 
-    public void ValidatorBonusRange(String BonusNumber){
+    public static void ValidatorBonusRange(String BonusNumber){
         int[] checkpoint = new int[]{Integer.parseInt(BonusNumber)};
 
         if(checkpoint[0]<1 || checkpoint[0]>45){

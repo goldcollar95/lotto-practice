@@ -25,7 +25,7 @@ public class Match {
         return result;
     }
 
-    public List<Integer> matchingCorrector(List<List<Integer>> lottoNumbers, List<Integer> WinningNumbers){
+    public static List<Integer> matchingCorrector(List<List<Integer>> lottoNumbers, List<Integer> WinningNumbers){
         Map<List<Integer>, Integer> map = new HashMap<>();
         for(List<Integer> lotto: lottoNumbers){
             countCheck(map, lotto, WinningNumbers);
@@ -46,14 +46,14 @@ public class Match {
         return matchCount;
     }
 
-    private void setMatchCount(Map<List<Integer>, Integer> map){
+    private static void setMatchCount(Map<List<Integer>, Integer> map){
         countCheck = Collections.max(map.values());
         matchCount = countCheck;
     }
 
 
     // 3개일치 --> 1개 추가
-    public void countCheck(Map<List<Integer>, Integer> map, List<Integer> lotto, List<Integer> winningNumbers) {
+    public static void countCheck(Map<List<Integer>, Integer> map, List<Integer> lotto, List<Integer> winningNumbers) {
             for(Integer match : winningNumbers){
                 if(lotto.contains(match)){
                     countCheck++;
@@ -63,7 +63,7 @@ public class Match {
     }
 
 
-    public boolean BonusCheck(List<Integer> MatchingLotto, int BonuseNumber){
+    public static boolean BonusCheck(List<Integer> MatchingLotto, int BonuseNumber){
         if(MatchingLotto.contains(BonuseNumber)){
             return true;
         }
