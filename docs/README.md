@@ -38,7 +38,7 @@
 
 
 - [X] 보너스 번호 메소드 Match#BonusCheck()
-  - [ ] 예외사항 - 
+  - [X] 예외사항 - 
 
 
 - [X] 사용자 구매한 로또, 당첨 번호 비교 model#LottoCompare()
